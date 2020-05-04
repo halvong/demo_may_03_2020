@@ -97,7 +97,7 @@ hidden tags
 #Git   
 1. git log --oneline
 2. git config --global -e
-3. git commit --amend
+3. git commit --amend (before push to origin)
 
 
 
