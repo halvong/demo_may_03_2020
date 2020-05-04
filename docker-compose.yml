@@ -1,0 +1,31 @@
+version: '3'
+services:
+  web:
+    build: .
+    image: halvong/demo
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_HOST: database
+      POSTGRES_USER: tom
+      POSTGRES_PASSWORD: tom
+      POSTGRES_DB: demo
+    volumes:
+      - .:/usr/src/app
+    #env_file:
+    #  - .env/development/database
+    #  - .env/development/web
+  database:
+    image: postgres
+    ports:
+      - "32772:5432"
+    environment:
+      POSTGRES_USER: tom
+      POSTGRES_PASSWORD: tom
+      POSTGRES_DB: demo
+    #env_file:
+    #  - .env/development/database
+    volumes:
+      - db_data:/var/lib/postgresql/demo_data
+volumes:
+  db_data:
