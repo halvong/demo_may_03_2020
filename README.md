@@ -1,7 +1,7 @@
 Rails Stripe, Linkedin
-5/03/2020, Sun
+5/04/2020, Mon
 
-beginning Chp 3.
+chp3, redirect actions
 
 #git course
 https://www.udemy.com/course/git-advanced-commands/learn/lecture/8224568#overview
@@ -94,11 +94,28 @@ hidden tags
                    
    d. resourceful route
    
+3. def index
+        render('index')
+   end   
+4.   
+   
 #Git   
-1. git log --oneline
+1. show log 
+   git log --oneline
+   
 2. git config --global -e
-3. git commit --amend (before push to origin)
 
+3. modify commit 
+   git commit --amend -m "hello world" (before push to origin)
+   
+4. Switch remote URL 
+   git remote -v
+   git remote set-url origin https://github.com/USERNAME/REPOSITORY.git 
+   
+5. git difftool <head commit> <previous commit>
+   git diff <head commit> <previous commit>
+   
+6. git fetch origin --prune   
 
 
 
