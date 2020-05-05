@@ -1,9 +1,14 @@
 Rails Stripe, Linkedin
-4/26/2020, Sat
+5/04/2020, Mon
 
-https://subscription.packtpub.com/video/web_development/9781800201521
+chp3, redirect actions
+
+#git course
+https://www.udemy.com/course/git-advanced-commands/learn/lecture/8224568#overview
 
 https://www.linkedin.com/learning/ruby-on-rails-5-essential-training/render-a-template
+https://github.com/halvong/demo_may_03_2020
+https://subscription.packtpub.com/video/web_development/9781800201521
 
 #user
 1. halvong@yahoo.com:123456
@@ -23,7 +28,11 @@ hidden tags
     stripe-public-key
 
 
+<<<<<<< HEAD
 #Rails
+=======
+#Rails Stripe
+>>>>>>> dev
 1. docker run -i -t --rm -v ${PWD}:/usr/src/app ruby:2.6.3 bash
    gem install rails
    rails new myapp -d postgresql --no-ri --no-rdoc
@@ -73,8 +82,49 @@ hidden tags
 15. docker-compose exec web rails db:migrate VERSION=0
 16. docker-compose exec web rails db:migrate:status
      
+<<<<<<< HEAD
     
 ---Steps by Steps
 docker-compose exec web rails g controller demo index #demo controller w/ index view
+=======
+#Rails Current
+1. docker-compose exec web rails g controller demo index #demo controller w/ index view
+2. a. simple route - get "demo/index" or match "demo/index", :to => "demo#index", :via => :get 
+   b. default route - :controller/:action/:id 
+                      /students/edit/52
+                      StudentsController, edit action, id=52
+                      ---
+                      get ':controller(/:action(/:id))'
+                      match ':controller(/:action(/:id))', :via => :get
+                      ---
+   c. root route - match "/", :to => "demo#index", :via => :get     
+                   ---   
+                   root "demo#index"
+                   
+   d. resourceful route
+   
+3. def index
+        render('index')
+   end   
+4.   
+   
+#Git   
+1. show log 
+   git log --oneline
+   
+2. git config --global -e
+
+3. modify commit 
+   git commit --amend -m "hello world" (before push to origin)
+   
+4. Switch remote URL 
+   git remote -v
+   git remote set-url origin https://github.com/USERNAME/REPOSITORY.git 
+   
+5. git difftool <head commit> <previous commit>
+   git diff <head commit> <previous commit>
+   
+6. git fetch origin --prune   
+
 
 
