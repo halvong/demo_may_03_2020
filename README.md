@@ -1,5 +1,5 @@
 Rails Stripe, Linkedin
-5/04/2020, Mon
+5/25/2020, Mon
 
 chp3, redirect actions
 
@@ -94,10 +94,26 @@ hidden tags
                    
    d. resourceful route
    
-3. def index
+3. Render template 
+    def index
         render('index')
+        render(:template => 'demo/hello')
+        render('demo/hello')
+        render('hello')
    end   
-4.   
+4. Redirect actions   
+
+    def other_hello
+        redirect_to(:controller => 'demo', :action => 'index') 
+        redirect_to(:action => 'index') 
+    end
+5. View templates
+    <%= 1 + 1 %>
+    <% target = "world" %>
+
+6. <link href="/assets/stylesheets/application.css" rel="stylesheet" type="text/css" media="all" />
+   <%= stylesheet_link_tag('application') %> 
+   <%= stylesheet_link_tag('application', :media=> 'all') %> 
    
 #Git   
 1. show log 
