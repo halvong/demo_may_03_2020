@@ -79,7 +79,10 @@ hidden tags
 16. docker-compose exec web rails db:migrate:status
      
 #Rails Current
-1. docker-compose exec web rails g controller demo index #demo controller w/ index view
+1. demo controller w/ index view
+   docker-compose exec web rails g controller demo index 
+   docker-compose exec web rails g controller grand index
+ 
 2. a. simple route - get "demo/index" or match "demo/index", :to => "demo#index", :via => :get 
    b. default route - :controller/:action/:id 
                       /students/edit/52
@@ -132,6 +135,6 @@ hidden tags
    git diff <head commit> <previous commit>
    
 6. git fetch origin --prune   
-
+7. git merge --squash <branch>
 
 
