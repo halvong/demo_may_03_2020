@@ -3,10 +3,10 @@ Rails Stripe, Linkedin
 
 chp3, redirect actions
 
-#git course
-https://www.udemy.com/course/git-advanced-commands/learn/lecture/8224568#overview
+#url
+https://subscription.packtpub.com/video/web_development/9781838822828/113216/113220/showcase-and-home-info
 
-https://www.linkedin.com/learning/ruby-on-rails-5-essential-training/render-a-template
+#github
 https://github.com/halvong/demo_may_03_2020
 https://subscription.packtpub.com/video/web_development/9781800201521
 
