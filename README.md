@@ -1,11 +1,10 @@
 Rails Stripe, Linkedin
-5/25/2020, Mon
+5/26/2020, Tues
 
-chp3, redirect actions
+Migration Methods
 
 #url
-https://subscription.packtpub.com/video/web_development/9781838822828/113216/113220/showcase-and-home-info
-
+https://www.linkedin.com/learning/ruby-on-rails-5-essential-training/migration-methods
 #github
 https://github.com/halvong/demo_may_03_2020
 https://subscription.packtpub.com/video/web_development/9781800201521
@@ -117,6 +116,27 @@ hidden tags
 6. <link href="/assets/stylesheets/application.css" rel="stylesheet" type="text/css" media="all" />
    <%= stylesheet_link_tag('application') %> 
    <%= stylesheet_link_tag('application', :media=> 'all') %> 
+7. link   
+   <%= link_to "Home", {:action => 'index'}, :class=>"current" %>
+8. URL
+    params['page'] or params[:page]
+9. rails g migration DoNothingYet 
+    def up
+    end
+    
+    def down
+    end
+    
+10. docker-compose exec web rails g model ModelName    
+    docker-compose exec web rails g model User    
+
+11. rails db:migrate   
+    docker-compose exec web rails db:migrate:status  
+    rails db:migrate VERSION=0   
+    rails db:migrate VERSION=xxxxxxxxxxxxxxxx  
+    
+    
+
    
 #Git   
 1. show log 

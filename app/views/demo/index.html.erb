@@ -17,7 +17,7 @@
       <div class="container">
         <h1 class="logo"><a href="/">HBT</a></h1>
         <ul>
-          <li><%= link_to "Home", "/", :class=>"current" %></li>
+          <li><%= link_to "Home", {:action => 'index'}, :class=>"current" %></li>
           <li><%= link_to "About", "/demo/about" %></li>
           <li><%= link_to "Contact", "/demo/contact" %></li>
         </ul>
