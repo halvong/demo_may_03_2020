@@ -1,12 +1,11 @@
 Rails Stripe, Linkedin
-5/04/2020, Mon
+5/26/2020, Tues
 
-chp3, redirect actions
+Migration Methods
 
-#git course
-https://www.udemy.com/course/git-advanced-commands/learn/lecture/8224568#overview
-
-https://www.linkedin.com/learning/ruby-on-rails-5-essential-training/render-a-template
+#url
+https://www.linkedin.com/learning/ruby-on-rails-5-essential-training/migration-methods
+#github
 https://github.com/halvong/demo_may_03_2020
 https://subscription.packtpub.com/video/web_development/9781800201521
 
@@ -28,11 +27,7 @@ hidden tags
     stripe-public-key
 
 
-<<<<<<< HEAD
-#Rails
-=======
 #Rails Stripe
->>>>>>> dev
 1. docker run -i -t --rm -v ${PWD}:/usr/src/app ruby:2.6.3 bash
    gem install rails
    rails new myapp -d postgresql --no-ri --no-rdoc
@@ -82,13 +77,11 @@ hidden tags
 15. docker-compose exec web rails db:migrate VERSION=0
 16. docker-compose exec web rails db:migrate:status
      
-<<<<<<< HEAD
-    
----Steps by Steps
-docker-compose exec web rails g controller demo index #demo controller w/ index view
-=======
 #Rails Current
-1. docker-compose exec web rails g controller demo index #demo controller w/ index view
+1. demo controller w/ index view
+   docker-compose exec web rails g controller demo index 
+   docker-compose exec web rails g controller grand index
+ 
 2. a. simple route - get "demo/index" or match "demo/index", :to => "demo#index", :via => :get 
    b. default route - :controller/:action/:id 
                       /students/edit/52
@@ -103,10 +96,47 @@ docker-compose exec web rails g controller demo index #demo controller w/ index 
                    
    d. resourceful route
    
-3. def index
+3. Render template 
+    def index
         render('index')
+        render(:template => 'demo/hello')
+        render('demo/hello')
+        render('hello')
    end   
-4.   
+4. Redirect actions   
+
+    def other_hello
+        redirect_to(:controller => 'demo', :action => 'index') 
+        redirect_to(:action => 'index') 
+    end
+5. View templates
+    <%= 1 + 1 %>
+    <% target = "world" %>
+
+6. <link href="/assets/stylesheets/application.css" rel="stylesheet" type="text/css" media="all" />
+   <%= stylesheet_link_tag('application') %> 
+   <%= stylesheet_link_tag('application', :media=> 'all') %> 
+7. link   
+   <%= link_to "Home", {:action => 'index'}, :class=>"current" %>
+8. URL
+    params['page'] or params[:page]
+9. rails g migration DoNothingYet 
+    def up
+    end
+    
+    def down
+    end
+    
+10. docker-compose exec web rails g model ModelName    
+    docker-compose exec web rails g model User    
+
+11. rails db:migrate   
+    docker-compose exec web rails db:migrate:status  
+    rails db:migrate VERSION=0   
+    rails db:migrate VERSION=xxxxxxxxxxxxxxxx  
+    
+    
+
    
 #Git   
 1. show log 
@@ -125,6 +155,6 @@ docker-compose exec web rails g controller demo index #demo controller w/ index 
    git diff <head commit> <previous commit>
    
 6. git fetch origin --prune   
-
+7. git merge --squash <branch>
 
 
