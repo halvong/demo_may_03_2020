@@ -7,7 +7,6 @@ Migration Methods
 https://www.linkedin.com/learning/ruby-on-rails-5-essential-training/migration-methods
 #github
 https://github.com/halvong/demo_may_03_2020
-https://subscription.packtpub.com/video/web_development/9781800201521
 
 #user
 1. halvong@yahoo.com:123456

@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <meta name="description" content="Welcome to the most extraordinary hotel in Boston.">
   <meta name="keywords" content="hotel, boston, new england">
+<<<<<<< HEAD
   <script src="https://kit.fontawesome.com/f3cb73ece8.js" crossorigin="anonymous"></script>
+=======
+  <!-- script src="https://kit.fontawesome.com/f3cb73ece8.js" crossorigin="anonymous"></script -->
+  <%= javascript_include_tag "https://kit.fontawesome.com/f3cb73ece8.js", :crossorigin=>"anonymous" %>
+>>>>>>> dev
   <%= stylesheet_link_tag('style', :media=> 'all') %>
 
   <title>Hotel BT | Welcome</title>
@@ -25,7 +30,42 @@
 
     </nav>
 
+<<<<<<< HEAD
   </header>
 
+=======
+    <div id="showcase">
+      <div class="container">
+        <div class="showcase-content">
+          <h1><span class="text-primary">Enjoy</span> Your Stay</h1>
+          <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aliquid debitis dolorem, dolores enim error facilis natus neque
+              obcaecati quo quod reiciendis rerum soluta vitae!
+          </p>
+          <%= link_to "About our Hotel", {:action => 'about'}, :class=> 'btn' %>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <section id="home-info" class="bg-dark">
+    <div class="info-img"></div>
+    <div class="info-content">
+      <h2><span class="text-primary">The History</span> Of Our Hotel</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Alias dicta illo, itaque iusto neque non, numquam, officiis quam quas repellat
+        repellendus soluta voluptas? Aliquid impedit maiores officiis quis saepe sequi?
+        Accusantium alias aperiam autem commodi consectetur corporis debitis delectus ducimus eligendi, et hic inventore ipsam laborum magni maiores, mollitia nulla optio perspiciatis placeat qui quibusdam quod repudiandae, saepe tempore vero.
+      </p>
+      <%= link_to "Read More", {:action => 'about'}, :class=> 'btn btn-light' %>
+    </div>
+
+
+  </section>
+
+>>>>>>> dev
 </body>
 </html>
