@@ -1,10 +1,10 @@
 Rails Stripe, Linkedin
-5/26/2020, Tues
+6/10/2020, Wed
 
-Migration Methods
+Find Records
 
 #url
-https://www.linkedin.com/learning/ruby-on-rails-5-essential-training/migration-methods
+https://www.linkedin.com/learning/ruby-on-rails-5-essential-training/find-records
 #github
 https://github.com/halvong/demo_may_03_2020
 
@@ -75,6 +75,14 @@ hidden tags
         
 15. docker-compose exec web rails db:migrate VERSION=0
 16. docker-compose exec web rails db:migrate:status
+17. docker-compose exec web rails g model Subject 
+    docker-compose exec web rails g model Page 
+    docker-compose exec web rails g model Section 
+    docker-compose exec web rails db:migrate
+    
+18. docker-compose exec web rails g migration AlterUsers 
+    docker-compose exec web rails db:migrate
+ 
      
 #Rails Current
 1. demo controller w/ index view
@@ -134,7 +142,8 @@ hidden tags
     rails db:migrate VERSION=0   
     rails db:migrate VERSION=xxxxxxxxxxxxxxxx  
     
-    
+12. docker-compose exec web rails console 
+
 
    
 #Git   

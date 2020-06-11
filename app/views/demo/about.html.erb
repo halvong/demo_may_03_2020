@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Welcome to the most extraordinary hotel in Boston.">
+  <meta name="keywords" content="hotel, boston, new england">
+  <!-- script src="https://kit.fontawesome.com/f3cb73ece8.js" crossorigin="anonymous"></script -->
+  <%= javascript_include_tag "https://kit.fontawesome.com/f3cb73ece8.js", :crossorigin=>"anonymous" %>
+  <%= stylesheet_link_tag('style', :media=> 'all') %>
+  <script src="https://kit.fontawesome.com/f3cb73ece8.js" crossorigin="anonymous"></script>
+
+  <title>Hotel BT | Welcome</title>
+</head>
+<body>
+<header>
+
+  <nav id="navbar">
+
+    <div class="container">
+      <h1 class="logo"><a href="/">HBT</a></h1>
+      <ul>
+        <li><%= link_to "Home", {:action => 'index'}  %></li>
+        <li><%= link_to "About", {:action => 'about'}, :class=>"current" %></li>
+        <li><%= link_to "Contact", "/demo/contact" %></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<section id="about-info" class="bg-light">
+  <div class="container">
+    <div class="info-left">
+      <h1><span class="text-primary">About</span> Hotel BT</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Corporis culpa est molestias officia perferendis quaerat quam quasi!
+      </p>
+      <p>
+        Beatae dicta ducimus ex incidunt iusto nisi optio placeat porro rem, tempore, totam, voluptates.
+        molestias officia perferendis quaerat  reprehenderit repudiandae!
+      </p>
+    </div>
+    <div class="info-right">
+      <%= image_tag("photo-2.jpg", :alt=>'Hotel') %>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<footer id="main-footer">
+  <p>Hotel BT &copy 2020, All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

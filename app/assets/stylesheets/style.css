@@ -71,9 +71,16 @@ p {
 }
 
 .bg-primary {
-    background: #333;
-    color: #f7c08a;
+    color: #333;
+    background: #f7c08a;
 }
+
+.clr {
+    clear: both;
+}
+
+/*Padding*/
+
 
 /* navbar */
 #navbar {
@@ -158,4 +165,40 @@ p {
     padding-bottom: 30px;
 }
 
+/* Features */
+.box {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+}
 
+.box i {
+    margin-bottom: 10px;
+}
+/* About Info */
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+#about-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+/* Footer */
+#main-footer {
+    text-align: center;
+    background: #444;
+    color: #fff;
+    padding: 20px;
+}

@@ -4,13 +4,10 @@
   <meta charset="UTF-8">
   <meta name="description" content="Welcome to the most extraordinary hotel in Boston.">
   <meta name="keywords" content="hotel, boston, new england">
-<<<<<<< HEAD
-  <script src="https://kit.fontawesome.com/f3cb73ece8.js" crossorigin="anonymous"></script>
-=======
   <!-- script src="https://kit.fontawesome.com/f3cb73ece8.js" crossorigin="anonymous"></script -->
   <%= javascript_include_tag "https://kit.fontawesome.com/f3cb73ece8.js", :crossorigin=>"anonymous" %>
->>>>>>> dev
   <%= stylesheet_link_tag('style', :media=> 'all') %>
+  <script src="https://kit.fontawesome.com/f3cb73ece8.js" crossorigin="anonymous"></script>
 
   <title>Hotel BT | Welcome</title>
 </head>
@@ -30,10 +27,6 @@
 
     </nav>
 
-<<<<<<< HEAD
-  </header>
-
-=======
     <div id="showcase">
       <div class="container">
         <div class="showcase-content">
@@ -62,10 +55,34 @@
       </p>
       <%= link_to "Read More", {:action => 'about'}, :class=> 'btn btn-light' %>
     </div>
-
-
   </section>
 
->>>>>>> dev
+  <section id="features">
+    <div class="box bg-light">
+      <i class="fas fa-hotel fa-3x"></i>
+      <h3>Great Location</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Aperiam at atque beatae corporis fugiat illo illum nulla.</p>
+    </div>
+    <div class="box bg-primary">
+      <i class="fas fa-utensils fa-3x"></i>
+      <h3>Free Meals</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Aperiam at atque beatae corporis fugiat illo illum nulla.</p>
+    </div>
+    <div class="box bg-light">
+      <i class="fas fa-dumbbell fa-3x"></i>
+      <h3>Fitness Room</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Aperiam at atque beatae corporis fugiat illo illum nulla.</p>
+    </div>
+  </section>
+
+  <!--div class="clr"></div-->
+
+  <footer id="main-footer">
+   <p>Hotel BT &copy 2020, All Rights Reserved</p>
+  </footer>
+
 </body>
 </html>
